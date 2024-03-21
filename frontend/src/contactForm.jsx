@@ -43,6 +43,8 @@ const ContactForm = ({existingContact = {}, updateCallBack}) => {
 
     return <form onSubmit={onSubmit}>
         <div class="m-4"><div>
+            <h1>Create contact</h1>
+            <br /><br />
             <label htmlFor="firstName" class="form-label">First Name</label>
             <input type="text" id="firstName" value={firstName} onChange={(e)=> setFirstName(e.target.value)} class="form-control"/> </div>
             <div><label htmlFor="lastName" class="form-label">Last Name</label>
