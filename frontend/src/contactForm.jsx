@@ -42,14 +42,14 @@ const ContactForm = ({existingContact = {}, updateCallBack}) => {
     }
 
     return <form onSubmit={onSubmit}>
-        <div><div>
-            <label htmlFor="firstName">First Name</label>
-            <input type="text" id="firstName" value={firstName} onChange={(e)=> setFirstName(e.target.value)}/> </div>
-            <div><label htmlFor="lastName">Last Name</label>
-            <input type="text" id="lastName" value={lastName} onChange={(e)=> setLastName(e.target.value)}/></div>
-            <div><label htmlFor="email">Email</label>
-            <input type="text" id="email" value={email} onChange={(e)=> setEmail(e.target.value)}/></div>
-            <div><button type="submit">{updating ? "update" : "create"}</button></div>
+        <div class="m-4"><div>
+            <label htmlFor="firstName" class="form-label">First Name</label>
+            <input type="text" id="firstName" value={firstName} onChange={(e)=> setFirstName(e.target.value)} class="form-control"/> </div>
+            <div><label htmlFor="lastName" class="form-label">Last Name</label>
+            <input type="text" id="lastName" value={lastName} onChange={(e)=> setLastName(e.target.value)} class="form-control"/></div>
+            <div><label htmlFor="email" class="form-label">Email</label>
+            <input type="text" id="email" value={email} onChange={(e)=> setEmail(e.target.value)} class="form-control"/></div>
+            <div><button type="submit" class="btn btn-primary m-1">{updating ? "update" : "create"}</button></div>
         </div>
     </form>
 }

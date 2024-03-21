@@ -20,10 +20,11 @@ const ContactList = ({contacts, updateContact ,updateCallBack}) => {
         }
     }
 
-    return <div>
-        <h2>Contacts</h2>
-        <table>
-            <thead>
+    return <div className="table-responsive"><br />
+        <h1 class="d-flex justify-content-center">list of contacts</h1>
+        
+        <table class="table table-dark table-striped">
+            <thead class="table-light">
                 <tr>
                     <th>First Name</th>
                     <th>Last Name</th>
